@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px) {
+    .search {
+        position: relative;
+    }
+
+    .search__button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 40%;
+        right: 16px;
+
+    }
+
+    .navigation {
+        display: flex;
+        gap: 8px;
+    }
+
+    .search__input {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding: 13px 16px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(255, 255, 255, 1);
+    }
+
+    .search-form {
+        border-radius: 20px;
+    }
+
+    .library,
+    .home-button {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding: 13px 30px;
+        border-radius: 20px;
+    }
+
+    .logo__text {
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+
+
+
+    .header {
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        height: 316px;
+        border-radius: 0.8rem;
+        margin: 0 30px;
+        padding: 16px 32px;
+        background-image: url(../images/header-background-desktop@1x.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+        .header {
+            background-image: url(../images/header-background-desktop@2x.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
