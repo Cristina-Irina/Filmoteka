@@ -1,0 +1,150 @@
+// ************My library*********
+
+// header library
+
+.header__main-nav--libr {
+  margin-bottom: 258px;
+  align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 105px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-bottom: 151px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.header__buttons-libr {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.header__buttn-libr {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 24px;
+    left: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 700px;
+  }
+}
+
+.header__buttn-link {
+  height: 34px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  &.watch {
+    width: 102px;
+  }
+
+  &.queue {
+    width: 86px;
+  }
+
+  &.watch:hover:not(.active),
+  &.watch:focus:not(.active),
+  &.queue:hover:not(.active),
+  &.queue:focus:not(.active) {
+    background-color: #b92f2c;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 38px;
+
+    &.watch {
+      width: 102px;
+    }
+
+    &.queue {
+      width: 86px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 42px;
+    &.watch {
+      width: 120px;
+    }
+
+    &.queue {
+      padding: 14px 24px;
+    }
+  }
+}
+
+// library - gallery
+.library-gallery__image {
+  @media screen and (max-width: 767px) {
+    max-width: 350px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 550px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 750px;
+  }
+}
+
+.library-gallery__text {
+  margin-top: 10px;
+  color: #b92f2c;
+
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.05;
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.05;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+.library-gallery__wrap {
+  text-align: center;
+  background-image: radial-gradient(
+    #67a2b6 10%,
+    #076585 10%,
+    #67a2b6 10%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
