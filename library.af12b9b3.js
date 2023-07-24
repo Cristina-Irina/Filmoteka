@@ -1,2 +1,0 @@
-var student=document.querySelector(".footer-modal_students"),dropModal=document.querySelector(".modal"),modal=document.querySelector(".modal-content");function openModal(){dropModal.style.display="block",modal.style.display="block"}function closeModal(){dropModal.style.display="none",modal.style.display="none"}student.onclick=openModal,dropModal.onclick=closeModal;
-//# sourceMappingURL=library.af12b9b3.js.map
