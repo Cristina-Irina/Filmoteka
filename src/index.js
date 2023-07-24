@@ -4,3 +4,4 @@ import './js/localStorage';
 import './js/footer-modal.js';
 import './library.js';
 import './js/api-service.js';
+import './js/pagination.js';
