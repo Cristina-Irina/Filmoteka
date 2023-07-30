@@ -1,7 +1,9 @@
-import './js/header.js';
-import './js/modalCard';
-import './js/localStorage';
-import './js/footer-modal.js';
-import './library.js';
-import './js/api-service.js';
-import './js/pagination.js';
+import './js/service-api';
+import './js/pagination';
+//import './js/galleryCard';
+//import './js/modal';
+//import './js/teamModal';
+//import './js/scroll';
+//import './js/search-by-keyword';
+//import './js/themeSwitcher';
+import '../node_modules/basiclightbox/dist/basicLightbox.min.css';

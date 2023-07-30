@@ -10,20 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./library.js"></script>
   </head>
   <body class="library-page">
     <div class="wrapper">
       <include src="./partials/mylibrary.html"></include>
-
       <main>
         <include src="./partials/gallery.html"></include>
+        <include src="./partials/library-gallery.html"></include>
+
         <include src="./partials/pagination.html"></include>
       </main>
       <include src="./partials/footer.html"></include>
+      <include src="./partials/modalCard.html"></include>
       <include src="./partials/footer-modal.html"></include>
+      <include src="./partials/scroll.html"></include>
     </div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
   </body>

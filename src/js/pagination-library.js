@@ -1,6 +1,5 @@
 import Pagination from 'tui-pagination';
 
-const container = document.querySelector('#pagination');
 const options = {
   totalItems: 0,
   itemsPerPage: 12,
@@ -28,9 +27,4 @@ const options = {
   },
 };
 
-export const pagination = new Pagination(container, options);
-
-
-
-
-
+export const pagination = new Pagination('#pagination', options);
