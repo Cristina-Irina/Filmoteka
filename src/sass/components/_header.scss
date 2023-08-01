@@ -413,7 +413,7 @@
   height: 32px;
   margin-right: 8px;
   backface-visibility: visible !important;
-  animation: flip 4s ease infinite;
+  animation: fillanimation 5s infinite alternate;
   z-index: 0;
 
   @media screen and (min-width: 768px) {
@@ -427,26 +427,17 @@
     margin-right: 16px;
   }
 
-  @keyframes flip {
+  @keyframes fillanimation {
     0% {
-      transform: rotateY(0);
-      animation-timing-function: ease;
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: hsl(189, 68%, 75%);
     }
-    40% {
-      transform: rotateY(170deg);
-      animation-timing-function: ease;
-    }
-    50% {
-      transform: rotateY(190deg);
-      animation-timing-function: ease;
-    }
-    80% {
-      transform: rotateY(360deg);
-      animation-timing-function: ease;
-    }
+  
     100% {
-      transform: scale(1);
-      animation-timing-function: ease;
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%, 0%);
     }
   }
 }
