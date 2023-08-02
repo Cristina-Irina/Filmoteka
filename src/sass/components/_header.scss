@@ -237,15 +237,9 @@
 .header__list-buttons {
   display: flex;
   margin-bottom: 16px;
+  gap: 8px;
 }
 
-.header__list-item:not(:last-child) {
-  margin-right: 4px;
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 8px;
-  }
-}
 
 
 
@@ -405,7 +399,8 @@
 // logo
 .header__logo {
   text-align: center;
-  display: inline-block;
+  position: relative;
+  bottom: 16px
 }
 
 .header__icon.film {
@@ -504,17 +499,18 @@
 
 .header__buttn-libr {
   @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: 24px;
-    left: 68px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 350px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 115px;
+    margin-left: 285px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 519px;
+    margin-left: 718px;
   }
 }
 
@@ -548,7 +544,7 @@
     height: 38px;
 
     &.watch {
-      width: 102px;
+      width: 95px;
     }
 
     &.queue {
@@ -559,7 +555,7 @@
   @media screen and (min-width: $desktop) {
     height: 42px;
     &.watch {
-      width: 120px;
+      width: 118px;
     }
 
     &.queue {
@@ -567,4 +563,3 @@
     }
   }
 }
-
