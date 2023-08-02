@@ -398,10 +398,11 @@
 
 // logo
 .header__logo {
-  text-align: center;
   position: relative;
-  bottom: 16px
-}
+  bottom: 16px;
+  @media screen and (min-width: 768px) {
+  margin-right: 60px;
+}}
 
 .header__icon.film {
   width: 32px;
