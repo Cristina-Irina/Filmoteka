@@ -1,24 +1,26 @@
 .theme-switch {
+  padding: 3px;
+  border: 2px solid #8b2f2f;
+  border-radius: 10px;
   position: absolute;
-  top: 23%;
   right: 0%;
   display: flex;
   align-items: center;
   transform: translateX(-50%);
 
   @media screen and(min-width: 321px) and (max-width: 767px) {
-    top: 23%;
+    top: 92%;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 81%;
+    top: 87%;
   }
   @media screen and (min-width: $desktop) {
-    top: 79%;
+    top: 90%;
   }
 }
 
 .theme-switch__icon {
-  color: #000000;
+  color: #141415;
   height: 14px;
   width: 14px;
   transition: color 250ms linear;
