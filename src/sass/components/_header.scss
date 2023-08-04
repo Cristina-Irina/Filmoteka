@@ -237,15 +237,9 @@
 .header__list-buttons {
   display: flex;
   margin-bottom: 16px;
+  gap: 8px;
 }
 
-.header__list-item:not(:last-child) {
-  margin-right: 4px;
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 8px;
-  }
-}
 
 
 
@@ -404,16 +398,18 @@
 
 // logo
 .header__logo {
-  text-align: center;
-  display: inline-block;
-}
+  position: relative;
+  bottom: 16px;
+  @media screen and (min-width: 768px) {
+  margin-right: 60px;
+}}
 
 .header__icon.film {
   width: 32px;
   height: 32px;
   margin-right: 8px;
   backface-visibility: visible !important;
-  animation: flip 4s ease infinite;
+  animation: fillanimation 5s infinite alternate;
   z-index: 0;
 
   @media screen and (min-width: 768px) {
@@ -427,26 +423,17 @@
     margin-right: 16px;
   }
 
-  @keyframes flip {
+  @keyframes fillanimation {
     0% {
-      transform: rotateY(0);
-      animation-timing-function: ease;
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: hsl(189, 68%, 75%);
     }
-    40% {
-      transform: rotateY(170deg);
-      animation-timing-function: ease;
-    }
-    50% {
-      transform: rotateY(190deg);
-      animation-timing-function: ease;
-    }
-    80% {
-      transform: rotateY(360deg);
-      animation-timing-function: ease;
-    }
+  
     100% {
-      transform: scale(1);
-      animation-timing-function: ease;
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%, 0%);
     }
   }
 }
@@ -513,17 +500,18 @@
 
 .header__buttn-libr {
   @media screen and (max-width: 767px) {
-    position: absolute;
-    bottom: 24px;
-    left: 68px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 350px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 115px;
+    margin-left: 285px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 519px;
+    margin-left: 718px;
   }
 }
 
@@ -557,7 +545,7 @@
     height: 38px;
 
     &.watch {
-      width: 102px;
+      width: 95px;
     }
 
     &.queue {
@@ -568,7 +556,7 @@
   @media screen and (min-width: $desktop) {
     height: 42px;
     &.watch {
-      width: 120px;
+      width: 118px;
     }
 
     &.queue {
@@ -576,4 +564,3 @@
     }
   }
 }
-
