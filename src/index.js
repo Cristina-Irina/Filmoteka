@@ -6,4 +6,10 @@ import './js/modal';
 import './js/scroll';
 import './js/search-by-keyword';
 import './js/themeSwitcher';
+import './js/firebase/auth-modal';
+import './js/firebase/auth-modal-refs';
+import './js/firebase/database-api';
+import './js/firebase/firebase-init';
+import './js/firebase/firebase-auth-home';
+import './js/header'
 import '../node_modules/basiclightbox/dist/basicLightbox.min.css';

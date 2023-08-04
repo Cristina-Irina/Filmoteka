@@ -4,10 +4,7 @@
     <nav class="header__main-nav">
       <ul class="header__list-buttons list">
         <li class="header__list-item">
-          <a
-            href="./index.html"
-            class="link header__buttn-link home current-page"
-          >
+          <a href="./index.html" class="link header__buttn-link home current-page">
             HOME
           </a>
         </li>
@@ -16,17 +13,16 @@
             MY LIBRARY
           </a>
         </li>
+        <li class="home-nav__item">
+          <button class="btn auth_lib log-in" id='home-auth-btn' >Login</button>
+         
+        </li>
       </ul>
+
 
       <div class="header__search-box">
         <form class="header__search" id="search-form">
-          <input
-            type="text"
-            name="searchQuery"
-            autocomplete="off"
-            class="header__input"
-            placeholder="Movie search"
-          />
+          <input type="text" name="searchQuery" autocomplete="off" class="header__input" placeholder="Movie search" />
           <button class="header__search-buttn">
             <svg class="header__icon search">
               <use href="./images/icons-sprite.svg#icon-search"></use>
@@ -46,18 +42,9 @@
       </svg>
 
       <div class="theme-switch__control">
-        <input
-          class="theme-switch__toggle"
-          type="checkbox"
-          name="theme"
-          id="theme-switch-toggle"
-          aria-label="Theme switcher"
-        />
-        <label
-          aria-hidden="true"
-          class="theme-switch__track"
-          for="theme-switch-toggle"
-        >
+        <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle"
+          aria-label="Theme switcher" />
+        <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
         </label>
         <div aria-hidden="true" class="theme-switch__marker"></div>
       </div>
@@ -65,7 +52,7 @@
       <svg class="theme-switch__icon icon-moon" aria-label="Moon icon">
         <use href="./images/background/icons.svg#moon"></use>
       </svg>
-    </div> 
+    </div>
     <div class="header__logo">
       <a href="./index.html" class="header__logo-link link">
         <svg class="header__icon film">
