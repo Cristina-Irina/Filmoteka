@@ -2,7 +2,7 @@ import './js/service-api';
 import './js/pagination';
 import './js/galleryCard';
 import './js/modal';
-//import './js/teamModal';
+import './js/teamModal';
 import './js/scroll';
 import './js/search-by-keyword';
 import './js/themeSwitcher';
