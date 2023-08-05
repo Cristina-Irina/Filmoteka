@@ -11,16 +11,14 @@ export function emptyLibrary() {
     </div>
   </li>
   <li class="library-gallery">
-  <div class="library-home">
-  <a
-    href="./index.html"
-    class="link header__buttn-link libr-bttn home current-page"
-  >
-    BACK HOME
-  </a>
-  </div>
- 
-</div>
+  <div class="container library-gallery__wrap">
+          <a
+            href="./index.html"
+            class="link header__buttn-link home current-page"
+          >
+            HOME
+          </a>
+          </div>
         </li>
 `;
   try {

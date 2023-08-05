@@ -26,14 +26,6 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-
-  background-image: radial-gradient(
-    at center,
-    #f6c9c7 10%,
-    #f6c9c7 10%,
-    #f6c9c7 10%,
-    rgba(255, 255, 255, 0) 50%
-  );
   
 
   body.dark-theme & {
@@ -74,14 +66,11 @@
     line-height: 1.2;
   }
 }
-.library-home {position: absolute;
-bottom: 100px;
-z-index: 9999;
-bottom: -140px;
-width: 100%;
-@media screen and (min-width: $tablet) {
-  bottom: -80px;}
-@media screen and (min-width: $desktop) {
-bottom: -290px;}
-}
-.libr-bttn {padding: 17px 35px;}
+.library-home {position: relative;
+padding-top: 10%;}
+.libr-bttn:hover {
+    background-color: #b92f2c;
+    color: #ffffff;
+    transform: scale(1.04);
+    box-shadow: 0 0 5px #ffffff;
+  }
