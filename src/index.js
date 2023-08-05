@@ -8,3 +8,5 @@ import './js/pagination';
 import './js/teamModal';
 import './js/scroll';
 import '../node_modules/basiclightbox/dist/basicLightbox.min.css';
+
+

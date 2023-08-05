@@ -18,7 +18,7 @@ function onCheckboxChange() {
 
 function setThemeInfoToLocalStorage() {
   if (document.body.classList.contains(Theme.LIGHT)) {
-    checkbox.setAttribute('checked', false);
+    checkbox.removeAttribute('checked');
     localStorage.setItem('active-theme', Theme.LIGHT);
   } else if (document.body.classList.contains(Theme.DARK)) {
     checkbox.setAttribute('checked', true);
@@ -26,14 +26,7 @@ function setThemeInfoToLocalStorage() {
   }
 }
 
-getThemeInfoFromLocalStorage();
 setThemeOnLoad();
-
-function getThemeInfoFromLocalStorage() {
-  if (localStorage.getItem('active-theme') === Theme.DARK) {
-    onCheckboxChange();
-  }
-}
 
 function setThemeOnLoad() {
   if (localStorage.getItem('active-theme') === Theme.DARK) {

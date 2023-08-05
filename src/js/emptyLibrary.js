@@ -16,7 +16,7 @@ export function emptyLibrary() {
             href="./index.html"
             class="link header__buttn-link home current-page"
           >
-            HOME
+          BACK HOME
           </a>
           </div>
         </li>

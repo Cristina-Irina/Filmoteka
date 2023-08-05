@@ -32,3 +32,14 @@
 .hidden {
   display: none;
 }
+
+.backdrop::-webkit-scrollbar-thumb {
+  background-color: #b92f2c;
+  border: 2px solid #353740;
+}
+.backdrop::-webkit-scrollbar-track {
+  background-color: #e6e6e6;
+}
+.backdrop::-webkit-scrollbar {
+  width: 10px;
+}
