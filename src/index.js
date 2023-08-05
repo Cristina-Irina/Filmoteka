@@ -1,3 +1,4 @@
+import './js/loader'
 import './js/service-api';
 import './js/search-by-keyword';
 import './js/galleryCard';

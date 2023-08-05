@@ -1,3 +1,5 @@
+import './js/loader'
+
 import './js/service-api';
 import './js/libraryBtn';
 import './js/teamModal';
