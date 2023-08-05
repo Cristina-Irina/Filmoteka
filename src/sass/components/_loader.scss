@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #353740;
+    background: #eaeaea;
     z-index: 9999;
     opacity: 1;
     display: flex;
@@ -30,6 +30,8 @@
         z-index: 0;
         transform-style: preserve-3d;
         transform: rotateX(360deg) scale(4);
+        --color1: #353740;
+        
     }
 
     &.done {
@@ -46,7 +48,6 @@
         transform: rotateY(360deg) scale(2);
     }
 }
-
 
 .loading--hiden {
     opacity: 0;
