@@ -5,7 +5,7 @@ export function emptyLibrary() {
   noneCardList.innerHTML = `
   <li class="library-gallery">
     <div class="container library-gallery__wrap">
-      <img class="library-gallery__image" src="./images/library-img/film2.png" alt="" width="750"/>
+      <img class="library-gallery__image" src="./images/library-img/library_img.png" alt="" width="750"/>
       <p class="library-gallery__text">The library is empty.</p>
       <p class="library-gallery__text">Add some movies.</p>
     </div>
