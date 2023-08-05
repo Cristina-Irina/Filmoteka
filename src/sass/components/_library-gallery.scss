@@ -74,3 +74,14 @@
     line-height: 1.2;
   }
 }
+.library-home {position: absolute;
+bottom: 100px;
+z-index: 9999;
+bottom: -140px;
+width: 100%;
+@media screen and (min-width: $tablet) {
+  bottom: -80px;}
+@media screen and (min-width: $desktop) {
+bottom: -290px;}
+}
+.libr-bttn {padding: 17px 35px;}

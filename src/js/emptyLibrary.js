@@ -10,6 +10,18 @@ export function emptyLibrary() {
       <p class="library-gallery__text">Add some movies.</p>
     </div>
   </li>
+  <li class="library-gallery">
+  <div class="library-home">
+  <a
+    href="./index.html"
+    class="link header__buttn-link libr-bttn home current-page"
+  >
+    BACK HOME
+  </a>
+  </div>
+ 
+</div>
+        </li>
 `;
   try {
     noneCardList.innerHTML = '';
