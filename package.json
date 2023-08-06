@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://cristina-irina.github.io/JS-project/",
+  "homepage": "https://cristina-irina.github.io/Filmoteka/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /JS-project/"
+    "build": "parcel build src/*.html --public-url /Filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristina-irina/JS-project.git"
+    "url": "git+https://github.com/cristina-irina/Filmoteka.git"
   },
   "keywords": [],
   "author": "Cristina I. R-M <cristina.rmackay@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://cristina-irina.github.io/JS-project/issues"
+    "url": "https://cristina-irina.github.io/Filmoteka/issues"
   },
    "dependencies": {
     "axios": "^1.4.0",
